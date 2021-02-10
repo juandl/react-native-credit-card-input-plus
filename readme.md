@@ -1,5 +1,5 @@
 
-# React Native Credit Card Input
+# React Native Credit Card Input (UPDATED)
 Easy (and good looking) credit-card input for your React Native Project 💳 💳
 
 UPDATED VERSION OF [sbycrosz](sbycrosz/react-native-credit-card-input),
