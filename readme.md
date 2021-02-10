@@ -4,6 +4,7 @@ Easy (and good looking) credit-card input for your React Native Project ðŸ’³ ðŸ’
 
 UPDATED VERSION OF [sbycrosz](sbycrosz/react-native-credit-card-input),
 
+<br/>
 <p align="center">
 <img src="https://github.com/sbycrosz/react-native-credit-card-input/blob/master/preview-ios.gif?raw=true" width=200/>
 <img src="https://github.com/sbycrosz/react-native-credit-card-input/blob/master/preview-ios-lite.gif?raw=true" width=200/>
