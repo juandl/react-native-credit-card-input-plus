@@ -1,6 +1,6 @@
 {
-  "name": "react-native-credit-card-input",
-  "version": "0.4.1",
+  "name": "react-native-credit-card-input-plus",
+  "version": "0.4.2",
   "description": "React native credit card input component",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sbycrosz/react-native-credit-card-input.git"
+    "url": "git+https://github.com/juandl/react-native-credit-card-input-plus.git"
   },
   "keywords": [
     "react-native",
@@ -28,10 +28,13 @@
   ],
   "author": "sbycrosz",
   "license": "MIT",
+  "contributors": [
+    "Juan David <me@juand.dev/> (https://juand.dev/)"
+  ],
   "bugs": {
-    "url": "https://github.com/sbycrosz/react-native-credit-card-input/issues"
+    "url": "https://github.com/juandl/react-native-credit-card-input-plus/issues"
   },
-  "homepage": "https://github.com/sbycrosz/react-native-credit-card-input#readme",
+  "homepage": "https://github.com/juandl/react-native-credit-card-input-plus#readme",
   "dependencies": {
     "card-validator": "^3.0.0",
     "prop-types": "^15.6.0",
