@@ -63,6 +63,7 @@ export default class CreditCardInput extends Component {
     cardBrandIcons: PropTypes.object,
 
     allowScroll: PropTypes.bool,
+    horizontalScroll: PropTypes.bool,
 
     additionalInputsProps: PropTypes.objectOf(PropTypes.shape(TextInput.propTypes)),
   };
@@ -91,6 +92,7 @@ export default class CreditCardInput extends Component {
     invalidColor: "red",
     placeholderColor: "gray",
     allowScroll: false,
+    horizontalScroll: true,
     additionalInputsProps: {},
   };
 
@@ -141,10 +143,19 @@ export default class CreditCardInput extends Component {
 
   render() {
     const {
-      cardImageFront, cardImageBack, inputContainerStyle,
-      values: { number, expiry, cvc, name, type }, focused,
-      allowScroll, requiresName, requiresCVC, requiresPostalCode,
-      cardScale, cardFontFamily, cardBrandIcons,
+      cardImageFront,
+      cardImageBack,
+      inputContainerStyle,
+      values: { number, expiry, cvc, name, type },
+      focused,
+      allowScroll,
+      horizontalScroll,
+      requiresName,
+      requiresCVC,
+      requiresPostalCode,
+      cardScale,
+      cardFontFamily,
+      cardBrandIcons,
     } = this.props;
 
     return (
@@ -161,7 +172,7 @@ export default class CreditCardInput extends Component {
           expiry={expiry}
           cvc={cvc} />
         <ScrollView ref="Form"
-          horizontal
+          horizontal={horizontalScroll}
           keyboardShouldPersistTaps="always"
           scrollEnabled={allowScroll}
           showsHorizontalScrollIndicator={false}
