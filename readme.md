@@ -6,10 +6,10 @@ UPDATED VERSION OF [sbycrosz](sbycrosz/react-native-credit-card-input),
 
 <br/>
 <p align="center">
-<img src="https://github.com/sbycrosz/react-native-credit-card-input/blob/master/preview-ios.gif?raw=true" width=200/>
-<img src="https://github.com/sbycrosz/react-native-credit-card-input/blob/master/preview-ios-lite.gif?raw=true" width=200/>
-<img src="https://github.com/sbycrosz/react-native-credit-card-input/blob/master/preview-android.gif?raw=true" width=200/>
-<img src="https://github.com/sbycrosz/react-native-credit-card-input/blob/master/preview-android-lite.gif?raw=true" width=200/>
+<img src="https://github.com/juandl/react-native-credit-card-input-plus/blob/master/preview-ios.gif?raw=true" width=200/>
+<img src="https://github.com/juandl/react-native-credit-card-input-plus/blob/master/preview-ios-lite.gif?raw=true" width=200/>
+<img src="https://github.com/juandl/react-native-credit-card-input-plus/blob/master/preview-android.gif?raw=true" width=200/>
+<img src="https://github.com/juandl/react-native-credit-card-input-plus/blob/master/preview-android-lite.gif?raw=true" width=200/>
 </p>
 
 Code:
@@ -33,13 +33,13 @@ Code:
 # Usage
 
 ```bash
-npm i --save react-native-credit-card-input
+npm i --save react-native-credit-card-input-plus
 ```
 
 then add these lines in your react-native codebase
 
 ```js
-import { CreditCardInput, LiteCreditCardInput } from "react-native-credit-card-input";
+import { CreditCardInput, LiteCreditCardInput } from "react-native-credit-card-input-plus";
 
 <CreditCardInput onChange={this._onChange} />
 // or
@@ -182,8 +182,6 @@ focus on to specified field
 ```
 
 # Example
-
-[Expo Snack](https://snack.expo.io/@sbycrosz/react-native-credit-card-example)
 
 In the `example` directory, run:
 
