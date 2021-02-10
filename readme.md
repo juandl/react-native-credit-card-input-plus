@@ -2,8 +2,6 @@
 # React Native Credit Card Input (UPDATED)
 Easy (and good looking) credit-card input for your React Native Project 💳 💳
 
-UPDATED VERSION OF [sbycrosz](sbycrosz/react-native-credit-card-input),
-
 <br/>
 <p align="center">
 <img src="https://github.com/juandl/react-native-credit-card-input-plus/blob/master/preview-ios.gif?raw=true" width=200/>
@@ -20,15 +18,18 @@ Code:
 <LiteCreditCardInput onChange={this._onChange} />
 ```
 
-
 # Features
 * Skeuomorphic credit-card 💳 (inspired by: [card](https://jessepollak.github.io/card/), [react-native-credit-card](https://github.com/sonnylazuardi/react-native-credit-card))
-* **!!NEW!!** Now you could scale the Credit Card for smaller screens
-* **!!NEW!!** Now you could use CardView as a Component. example use case: showing saved payment details, etc.
+* Scale the Credit Card for smaller screens
+* CardView as a Component. example use case: showing saved payment details, etc.
 * Lite version for smaller screens (or if skeuomorphic is not really your thing)
 * Credit-card input validations & formatting while you're typing
 * Form is fully navigatable using keypad
 * Works on both Android and iOS
+
+# License
+This is an updated and maintained version by [juandl](https://github.com/juandl). <br/>
+Original author [sbycrosz](sbycrosz/react-native-credit-card-input),
 
 # Usage
 
@@ -200,13 +201,9 @@ react-native run-android
 
 # Future Improvement
 * Add unit tests
-* Create example with [react-native-awesome-card-io](https://github.com/Kerumen/react-native-awesome-card-io)
 
 # Breaking Changes from 0.2.*
 * `cardViewSize` prop are removed from `CreditCardInput`, use `cardScale` instead (because changing the size will break most of the texts)
 * `bgColor` prop are removed from `CreditCardInput`, ask your designer friend to make a credit card image instead (or use the prebundled image)
 * `imageFront` and `imageBack` props are renamed to `cardImageFront` and `cardImageBack` respectively,
 * Android `monospace` fonts doesn't looks as nice as iOS `Courier`, bundle custom fonts into your app and override the default using `cardFontFamily` instead
-
-# Production App using react-native-credit-card-input
-* Grain.com.sg ([iOS](https://grain.com.sg/mobile/ios/download), [Android](https://grain.com.sg/mobile/android/download)) – Gourmet food delivery in Singapore
