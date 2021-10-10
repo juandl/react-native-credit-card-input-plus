@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint --ext .js ."
+    "lint": "eslint --ext .js .",
+    "release": "release-it"
   },
   "repository": {
     "type": "git",
@@ -50,6 +51,7 @@
     "babel-preset-react-native": "^1.8.0",
     "eslint": "~2.2.0",
     "eslint-config-airbnb": "6.0.2",
-    "eslint-plugin-react": "^4.2.0"
+    "eslint-plugin-react": "^4.2.0",
+    "release-it": "^14.11.6"
   }
 }
