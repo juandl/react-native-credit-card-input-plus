@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import {ViewPropTypes} from 'deprecated-react-native-prop-types';
 import {
   View,
   Text,
   TextInput,
   TouchableOpacity,
   StyleSheet,
-  ViewPropTypes,
 } from "react-native";
 
 const s = StyleSheet.create({
