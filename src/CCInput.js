@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import {ViewPropTypes} from 'deprecated-react-native-prop-types';
 import {
   View,
   Text,
@@ -25,7 +24,10 @@ export default class CCInput extends Component {
 
     status: PropTypes.oneOf(["valid", "invalid", "incomplete"]),
 
-    containerStyle: ViewPropTypes.style,
+    containerStyle: PropTypes.oneOfType([
+      PropTypes.object,
+      PropTypes.array,
+    ]),
     inputStyle: Text.propTypes.style,
     labelStyle: Text.propTypes.style,
     validColor: PropTypes.string,

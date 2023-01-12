@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import {ViewPropTypes} from 'deprecated-react-native-prop-types';
 import ReactNative, {
   NativeModules,
   View,
@@ -50,7 +49,10 @@ export default class CreditCardInput extends Component {
 
     labelStyle: Text.propTypes.style,
     inputStyle: Text.propTypes.style,
-    inputContainerStyle: ViewPropTypes.style,
+    inputContainerStyle: PropTypes.oneOfType([
+      PropTypes.object,
+      PropTypes.array,
+    ]),
 
     validColor: PropTypes.string,
     invalidColor: PropTypes.string,
