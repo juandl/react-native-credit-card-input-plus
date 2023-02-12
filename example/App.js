@@ -1,8 +1,12 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { StyleSheet, View, Switch } from "react-native";
-import { CreditCardInput, LiteCreditCardInput } from "react-native-credit-card-input";
 
-const s = StyleSheet.create({
+import {
+  CreditCardInput,
+  LiteCreditCardInput,
+} from "react-native-credit-card-input-plus";
+
+const Sty = StyleSheet.create({
   switch: {
     alignSelf: "center",
     marginTop: 20,
@@ -22,53 +26,54 @@ const s = StyleSheet.create({
   },
 });
 
+const ExampleApp = () => {
+  const [liteView, setLiteView] = useState(false);
 
-export default class Example extends Component {
-  state = { useLiteCreditCardInput: false };
+  const onChange = (formData) => {
+    console.log(JSON.stringify(formData, null, " "));
+  };
 
-  _onChange = (formData) => console.log(JSON.stringify(formData, null, " "));
-  _onFocus = (field) => console.log("focusing", field);
-  _setUseLiteCreditCardInput = (useLiteCreditCardInput) => this.setState({ useLiteCreditCardInput });
+  const onFocus = (field) => {
+    console.log("focusing", field);
+  };
 
-  render() {
-    return (
-      <View style={s.container}>
-        <Switch
-          style={s.switch}
-          onValueChange={this._setUseLiteCreditCardInput}
-          value={this.state.useLiteCreditCardInput} />
+  return (
+    <View style={Sty.container}>
+      <Switch
+        style={Sty.switch}
+        onValueChange={() => setLiteView((prev) => !prev)}
+        value={liteView}
+      />
 
-        { this.state.useLiteCreditCardInput ?
-          (
-            <LiteCreditCardInput
-              autoFocus
-              inputStyle={s.input}
+      {liteView ? (
+        <LiteCreditCardInput
+          autoFocus
+          inputStyle={Sty.input}
+          validColor={"black"}
+          invalidColor={"red"}
+          placeholderColor={"darkgray"}
+          onFocus={onFocus}
+          onChange={onChange}
+        />
+      ) : (
+        <CreditCardInput
+          autoFocus
+          requiresName
+          requiresCVC
+          // horizontalScroll={false}
+          requiresPostalCode
+          labelStyle={Sty.label}
+          inputStyle={Sty.input}
+          validColor={"black"}
+          invalidColor={"red"}
+          style
+          placeholderColor={"darkgray"}
+          onFocus={onFocus}
+          onChange={onChange}
+        />
+      )}
+    </View>
+  );
+};
 
-              validColor={"black"}
-              invalidColor={"red"}
-              placeholderColor={"darkgray"}
-
-              onFocus={this._onFocus}
-              onChange={this._onChange} />
-          ) : (
-            <CreditCardInput
-              autoFocus
-
-              requiresName
-              requiresCVC
-              requiresPostalCode
-
-              labelStyle={s.label}
-              inputStyle={s.input}
-              validColor={"black"}
-              invalidColor={"red"}
-              placeholderColor={"darkgray"}
-
-              onFocus={this._onFocus}
-              onChange={this._onChange} />
-          )
-        }
-      </View>
-    );
-  }
-}
+export default ExampleApp;

@@ -1,0 +1,26 @@
+diff --git a/node_modules/react-native-flip-card/lib/FlipCard.js b/node_modules/react-native-flip-card/lib/FlipCard.js
+index c496da7..4e76a7e 100644
+--- a/node_modules/react-native-flip-card/lib/FlipCard.js
++++ b/node_modules/react-native-flip-card/lib/FlipCard.js
+@@ -7,15 +7,18 @@ import {
+   View,
+   TouchableOpacity,
+   Animated,
+-  Platform,
+-  ViewPropTypes
++  Platform
+ } from "react-native";
+ 
++import {
++  ViewPropTypes,
++} from "deprecated-react-native-prop-types";
++
+ import S from './Style.js'
+ 
+ export default class FlipCard extends Component {
+   static propTypes = {
+-    style: ViewPropTypes.style
++    style: ViewPropTypes.style,
+   }
+ 
+   constructor (props) {

@@ -1,8 +1,6 @@
 {
   "extends": "airbnb",
-  "plugins": [
-    "react"
-  ],
+  "plugins": ["react"],
   "parser": "babel-eslint",
   "globals": {
     "it": false,
@@ -25,8 +23,11 @@
     "no-console": 0,
     "react/self-closing-comp": 0,
     "no-unused-expressions": 0,
-    "max-len": [2, 150, 4, {"ignoreUrls": true}],
-    "new-cap": [2, { "capIsNewExceptions": ["Map", "List", "Stack", "Record"]}],
+    "max-len": [2, 150, 4, { "ignoreUrls": true }],
+    "new-cap": [
+      2,
+      { "capIsNewExceptions": ["Map", "List", "Stack", "Record"] }
+    ],
     "func-names": 0,
     "quotes": [2, "double"],
     "react/jsx-indent-props": [2, 2],
@@ -35,6 +36,7 @@
     "react/prefer-stateless-function": 0,
     "arrow-body-style": 0,
     "no-nested-ternary": 0,
+    "react/jsx-no-bind": 0,
     "react/prop-types": 2
   }
 }
