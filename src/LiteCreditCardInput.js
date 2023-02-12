@@ -8,10 +8,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 
-import {
-  TextInputPropTypes,
-  ViewPropTypes,
-} from "deprecated-react-native-prop-types";
+import { TextInputPropTypes } from "deprecated-react-native-prop-types";
 
 import Icons from "./Icons";
 import CCInput from "./CCInput";
@@ -81,7 +78,9 @@ export default class LiteCreditCardInput extends Component {
     invalidColor: PropTypes.string,
     placeholderColor: PropTypes.string,
 
-    additionalInputsProps: PropTypes.objectOf(PropTypes.shape(TextInputPropTypes)),
+    additionalInputsProps: PropTypes.objectOf(
+      PropTypes.shape(TextInputPropTypes)
+    ),
   };
 
   static defaultProps = {

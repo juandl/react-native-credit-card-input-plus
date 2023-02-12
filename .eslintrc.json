@@ -31,7 +31,7 @@
     "func-names": 0,
     "quotes": [2, "double"],
     "react/jsx-indent-props": [2, 2],
-    "react/jsx-closing-bracket-location": [2, "after-props"],
+    "react/jsx-closing-bracket-location": 0,
     "no-use-before-define": [2, { "functions": false }],
     "react/prefer-stateless-function": 0,
     "arrow-body-style": 0,

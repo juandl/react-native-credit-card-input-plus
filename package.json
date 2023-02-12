@@ -1,13 +1,11 @@
 {
   "name": "react-native-credit-card-input-plus",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "description": "React native credit card input component",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint --ext .js .",
-    "release": "release-it",
-    "postinstall": "patch-package"
+    "lint": "eslint --ext .js ."
   },
   "repository": {
     "type": "git",
@@ -44,9 +42,8 @@
     "lodash.every": "^4.6.0",
     "lodash.pick": "^4.4.0",
     "lodash.values": "^4.3.0",
-    "patch-package": "^6.5.1",
     "prop-types": "^15.6.0",
-    "react-native-flip-card": "^3.5.6"
+    "react-native-card-flip": "^1.0.7"
   },
   "devDependencies": {
     "babel-eslint": "^5.0.0",
@@ -54,7 +51,6 @@
     "babel-preset-react-native": "^1.8.0",
     "eslint": "~2.2.0",
     "eslint-config-airbnb": "6.0.2",
-    "eslint-plugin-react": "^4.2.0",
-    "release-it": "^14.11.6"
+    "eslint-plugin-react": "^4.2.0"
   }
 }
