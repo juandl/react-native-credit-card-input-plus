@@ -10,7 +10,7 @@ import {
 } from "react-native";
 
 import defaultIcons from "./Icons";
-import CardFlip from "react-native-card-flip";
+import CardFlip from "./CardFlip";
 
 const BASE_SIZE = { width: 300, height: 190 };
 
