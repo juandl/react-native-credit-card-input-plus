@@ -29,7 +29,8 @@
   "author": "sbycrosz",
   "license": "MIT",
   "contributors": [
-    "Juan David <me@juand.dev/> (https://juand.dev/)"
+    "Juan David <me@juand.dev/> (https://juand.dev/)",
+    "Bernhard Wittmann <dev@bernhardwittmann.com/> (https://bernhardwittmann.com)"
   ],
   "bugs": {
     "url": "https://github.com/juandl/react-native-credit-card-input-plus/issues"
@@ -43,7 +44,7 @@
     "lodash.pick": "^4.4.0",
     "lodash.values": "^4.3.0",
     "prop-types": "^15.6.0",
-    "react-native-card-flip": "^1.0.7"
+    "react-native": "^0.73.6"
   },
   "devDependencies": {
     "babel-eslint": "^5.0.0",
